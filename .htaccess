@@ -1,0 +1,17 @@
+#Adjust default time zone 
+SetEnv TZ Asia/Kolkata
+
+Options -MultiViews +FollowSymlinks -Indexes
+
+<FilesMatch "\.(tpl|sql|ini|log)">
+	Order deny,allow
+	Deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /foodformula
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule . index.php
+</ifModule>
