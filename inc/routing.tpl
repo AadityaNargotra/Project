@@ -32,9 +32,29 @@
 				require_once(PAGE.'about.tpl');
 				break;
 
+			case 'address':
+				require_once(PAGE.'address.tpl');
+				break;
+
+			case 'signup':
+				require_once(PAGE.'signup.tpl');
+				break;
+			
+			case 'menu':
+				require_once(PAGE.'menu.tpl');
+				break;
+
+			case 'save_user':
+				require_once(CTRL.'userRegister.php');
+				break;
+
+			case 'user_verify':
+				require_once(CTRL.'userVerification.php');
+				break;
+				
 			case 'login':
 				if (isset($_SESSION['login']))
-					header('location:dashboard');
+					header('location:order');
 				else
 					require_once(PAGE.'login.tpl');
 				break;

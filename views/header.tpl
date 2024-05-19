@@ -17,6 +17,7 @@
                 <li><a href="<?php echo WEBPATH.'order'; ?>"> Order </a></li>
                 <li><a href="<?php echo WEBPATH.'team'; ?>"> Team </a></li>
                 <li><a href="<?php echo WEBPATH.'contact'; ?>"> Contact </a></li>
+                <li><a href="<?php echo WEBPATH.'signup'; ?>"> Contact </a></li>
             </ul>
         
                 
